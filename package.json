@@ -4,13 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --env-file=.env server.js"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fastify/multipart": "^9.3.0",
+    "@fastify/mysql": "^5.0.2",
     "fastify": "^5.6.2"
   },
-  "type": "module"
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
 }
